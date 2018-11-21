@@ -12,16 +12,36 @@
 
 <body>
     <div class="container">
-        <h1>Form Basics</h1>
+        <h1>Job Interview</h1>
         <hr>
         <form action="http://www.w3schools.com/action_page.php" method="get">
 
             Name:
-            <input type="text" name="name"><br> E-mail:
-            <input type="email" name="email"><br>
+            <input type="text" name="name" placeholder="Your Name" required><br> 
+            E-mail:
+            <input type="email" name="email" placeholder="Your Email" required><br>
 
             <!--add your own inputs below-->
-
+            
+            What is your favorite food?
+            <input type="text" name="about me" placeholder="Your Fav Food" required>
+            <br>
+            What job are you applying for?
+            <br>
+            <input type="radio" name="choices" value="SE">Software Engineer
+            <br>
+            <input type="radio" name="choices" value="IT">IT Support
+            <br>
+            <input type="radio" name="choices" value="janitor">Janitor
+            <br>
+            
+            How badly do you want the job?
+            <select name="thoughts">
+                <option value="idc">I can care less.</option>
+                <option value="alittle">A little bit..</option>
+                <option value="want">I want the job.</option>
+                <option value="alot">I will kill for this job!!!.</option>
+            </select>
 
 
 
